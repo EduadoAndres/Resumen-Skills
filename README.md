@@ -13,25 +13,29 @@ Modelamiento de datos basado en. :
     DAX = DATA ANALUSIS EXPRESSIONS 
     
     
-    1 lo primero que hemos realizado ha sido cargar las bases de datos desde access
+    hoy analizaremos las ventas de una compania comenzando desde lo mas general hasta lo mas especifico, lo primero que haremos sera cargar la base de datos llamada 'contososales'
 
-2 hemos organizado las tablas intentando primero realizar un modelo estrella para este projecto pero  este projecto requiere otro tipo de modelamiento donde existan en la parte superior las dimensiones y en la parte inferios las tablas de FACT
+2 Hemos organizado las tablas intentando primero realizar un modelo estrella para este projecto pero  este projecto requiere otro tipo de modelamiento donde existan en la parte superior las dimensiones y en la parte inferios las tablas de FACT
 
-
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/bc915466-9598-43a5-9cfb-df9279a04ac6/Untitled.png)
-
-1 analizaremos ventas x producto
-
-2 las ventas van desde el ano 2007 hasta el ano 2009
-
-3 dejaremos de actualizar ciertas tablas para optimizar el trabajo 
-
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/bc915466-9598-43a5-9cfb-df9279a04ac6/Untitled.png)
-
-Buscar dimensiones  para analizar en este caso analizaremos las ventas por categoria comparando las ventas del ano anterior con el presente, ademas de calgular los ingresos son descuentos Utilizando la funcion SUMX
+<img width="1416" alt="image" src="https://user-images.githubusercontent.com/112581327/196887080-120310c4-af45-4294-b3f7-570d747ff429.png">
 
 
-![image](https://user-images.githubusercontent.com/112581327/196499753-e6e93937-3092-4412-81a4-ec55257b88d9.png)
+3 Dejaremos de actualizar ciertas tablas para optimizar el trabajo.
+
+<img width="1416" alt="image" src="https://user-images.githubusercontent.com/112581327/196887346-4e43127b-59e0-4388-89c9-9852b9f6a4f3.png">
+
+
+
+4 Crearemos una tabla calendario para todo el modelo 
+
+5 Una vez creada la estructura del modelo de datos , es necesario buscar dimensiones para analizar.
+
+6 En este caso analizaremos las ventas por categoria comparando las ventas del año anterior con el presente
+
+![image](https://user-images.githubusercontent.com/112581327/196888883-8162ad14-519b-45d7-8ff6-c4ab797a4a6d.png)
+
+
+
 
 En este graphico resumen se pueden obtener las ventas, costos y utilizad por ano , ademas de analizar cada uno de los item por continente , por categoria o subcateoria 
 
